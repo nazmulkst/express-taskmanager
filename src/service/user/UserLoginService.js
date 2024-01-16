@@ -9,7 +9,7 @@ const UserLoginService = async(request, DataModel) => {
             return {status: 400, data: "Email and Password are required"};
         }
     
-        const data = await DataModel.aggregate([{$match: {email,password}}, {$project: {_id:0, userId:1,  firstName:1, lastName:1, email:1, username:1, password}}]);
+        const data = await DataModel.aggregate([{$match: {email,password}}, {$project: {_id:0, userId:1, email:1, password}}]);
         console.log(data.length);
 
         if(data.length > 0){

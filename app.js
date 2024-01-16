@@ -19,7 +19,6 @@ const rateLimit = require('express-rate-limiter');
 const helmet = require('helmet');
 const ExpressMongoSanitize = require('express-mongo-sanitize')
 const hpp = require('hpp');
-const xss = require('xss-clean');
 const cors = require('cors');
 
 // import expressRateLimiter from 'express-rate-limiter';

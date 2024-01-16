@@ -39,7 +39,6 @@
     "react-router-dom": "^6.21.1",
     "react-tooltip": "^5.25.0",
     "read-excel-file": "^5.7.1",
-    "recharts": "^2.10.3",
-    "xss-clean": "^0.1.4"
+    "recharts": "^2.10.3"
   }
 }
