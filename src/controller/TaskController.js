@@ -45,3 +45,14 @@ exports.deleteTask = async(req, res) => {
         res.status(400).json(result)
     }
 }
+
+
+exports.getTaskByStatus = async(req, res) => {
+    const result = await ListService(req, DataModel);
+
+    if(result.status == 200){
+        res.status(200).json(result)
+    } else {
+        res.status(400).json(result)
+    }
+}
