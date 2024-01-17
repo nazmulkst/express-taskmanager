@@ -19,6 +19,7 @@ router.put("/updateTask/:taskId", AuthVerifyMiddleware, TaskController.updateTas
 router.get("/getAllTask", AuthVerifyMiddleware, TaskController.getAllTask);
 router.delete("/deleteTask/:taskId", AuthVerifyMiddleware, TaskController.deleteTask);
 router.get("/getTaskByStatus/:status", AuthVerifyMiddleware, TaskController.getTaskByStatus);
+router.get("/taskStatusCount", AuthVerifyMiddleware, TaskController.taskStatusCount);
 
 
 
